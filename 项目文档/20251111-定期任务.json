@@ -1,0 +1,43 @@
+{
+  "scheduled_tasks": {
+    "date": "2025-11-11",
+    "system_checks": {
+      "task": "定期执行系统检查",
+      "script_path": "/home/FORTUNE网站升级/system_check_20251111.sh",
+      "frequency": "每周执行一次",
+      "last_execution": "2025-11-11 19:53:18",
+      "next_scheduled": "2025-11-18",
+      "description": "检查系统状态、软件版本、目录结构和进程信息"
+    },
+    "backup_tasks": {
+      "task": "定期备份重要信息",
+      "script_path": "/home/FORTUNE网站升级/auto-push.sh",
+      "frequency": "每次重要变更后执行",
+      "last_execution": "2025-11-11 19:54:00",
+      "description": "自动提交并推送所有更改到GitHub"
+    }
+  },
+  "identified_issues": {
+    "jquery_error": {
+      "url": "https://www.fortunepacific.net/manage/?m=content&a=photo",
+      "error": "Uncaught TypeError: $(...).size is not a function",
+      "files_affected": [
+        "frame.js?v=14.0029:246:44",
+        "global.js?v=14.0029:230:23"
+      ],
+      "problem": "jQuery版本兼容性问题，.size()方法在新版本中已被弃用",
+      "solution": "将.size()替换为.length"
+    }
+  },
+  "recommended_fixes": {
+    "jquery_compatibility": {
+      "issue": "jQuery版本兼容性问题",
+      "files_to_modify": [
+        "/www/wwwroot/fortunepacific.net/static/manage/js/frame.js",
+        "/www/wwwroot/fortunepacific.net/static/js/global.js"
+      ],
+      "fix_description": "将代码中的.size()替换为.length",
+      "example_fix": "将 $(selector).size() 替换为 $(selector).length"
+    }
+  }
+}
