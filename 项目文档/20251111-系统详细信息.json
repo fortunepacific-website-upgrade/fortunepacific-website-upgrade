@@ -1,0 +1,26 @@
+{
+  "system_info": {
+    "timestamp": "2025-11-11T00:00:00Z",
+    "collected_by": "Automated System Check",
+    "software_versions": {
+      "php": "PHP 5.4.45 (cli) (built: Jun  5 2017 10:08:48)",
+      "mysql": "mysql  Ver 14.14 Distrib 5.6.44, for Linux (x86_64) using EditLine wrapper",
+      "nginx": "Tengine/2.3.3 (nginx/1.18.0)"
+    }
+  },
+  "file_structure": {
+    "web_root": "/www/wwwroot/",
+    "directories": [
+      "default",
+      "fortunepacific.net",
+      "xcache"
+    ],
+    "backup_files": [
+      "fortunepacific.net_3iRBw.tar.gz (944MB)"
+    ]
+  },
+  "notes": {
+    "upload_directory": "上传目录未找到，请确认正确路径",
+    "next_steps": "需要进一步检查网站文件结构和上传功能"
+  }
+}

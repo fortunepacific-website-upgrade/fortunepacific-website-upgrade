@@ -1,0 +1,12 @@
+# 忽略敏感配置文件
+config/database.php
+config/app.php
+.env
+*.key
+*.pem
+private/
+secrets/
+
+# 忽略临时文件
+*.tmp
+*.log

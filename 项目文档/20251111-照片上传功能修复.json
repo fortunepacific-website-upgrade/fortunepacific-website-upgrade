@@ -1,0 +1,52 @@
+{
+  "snapshot_info": {
+    "name": "20251111恢复照片上传永久保存",
+    "timestamp": "2025-11-11T00:00:00Z",
+    "description": "照片上传功能已修复并创建快照"
+  },
+  "engineer_work_summary": {
+    "date": "2025-11-11",
+    "task": "照片上传功能修复",
+    "status": "已完成",
+    "notes": "需由相关工程师填写详细操作记录"
+  },
+  "system_checklist": {
+    "files_to_check": [
+      "检查/uploads/目录权限和存在性",
+      "检查/photo_upload.php功能文件",
+      "检查相关JavaScript文件",
+      "检查配置文件中的上传路径设置"
+    ],
+    "paths_to_verify": [
+      "/www/wwwroot/您的网站目录/",
+      "/www/wwwroot/您的网站目录/uploads/",
+      "/www/wwwroot/您的网站目录/config/"
+    ],
+    "source_code_review_points": [
+      "图片上传处理逻辑",
+      "文件类型验证",
+      "文件大小限制",
+      "存储路径处理"
+    ],
+    "database_tables_to_check": [
+      "photos表结构",
+      "uploads记录表",
+      "相关外键约束"
+    ],
+    "software_versions": {
+      "php_version": "待检查",
+      "mysql_version": "待检查",
+      "nginx_version": "待检查",
+      "jquery_version": "待检查"
+    }
+  },
+  "completed_tasks": [
+    "创建ECS快照：20251111恢复照片上传永久保存",
+    "照片上传功能修复确认"
+  ],
+  "next_steps": [
+    "获取工程师详细操作记录",
+    "进行全面系统检查",
+    "更新相关文档"
+  ]
+}
