@@ -1,0 +1,55 @@
+{
+  "jquery_issue_analysis": {
+    "date": "2025-11-11",
+    "issue_description": {
+      "error_message": "Uncaught TypeError: $(...).size is not a function",
+      "affected_pages": [
+        "https://www.fortunepacific.net/manage/?m=content&a=photo",
+        "https://www.fortunepacific.net/manage/?m=products&a=products&d=edit&ProId=2124",
+        "https://www.fortunepacific.net/manage/?m=seo&a=overview"
+      ],
+      "affected_files": [
+        "/www/wwwroot/fortunepacific.net/static/js/global.js",
+        "/www/wwwroot/fortunepacific.net/static/manage/js/frame.js"
+      ]
+    },
+    "root_cause_analysis": {
+      "primary_cause": "jQuery版本不兼容",
+      "details": {
+        "old_jquery_version": "jquery-1.8.3.js",
+        "new_jquery_version": "jquery-3.7.1.min.js",
+        "incompatible_methods": [".size()"],
+        "replacement_method": ".length"
+      },
+      "why_it_happened": [
+        "网站同时加载了多个jQuery版本(1.8.3和3.7.1)",
+        ".size()方法在jQuery 1.8之后被标记为废弃，在新版本中被移除",
+        "部分JavaScript代码仍在使用旧的.size()方法",
+        "jQuery Migrate插件虽然提供了兼容性支持，但不能解决所有问题"
+      ]
+    },
+    "solution_implemented": {
+      "method": "精确替换",
+      "files_modified": [
+        "/www/wwwroot/fortunepacific.net/static/js/global.js",
+        "/www/wwwroot/fortunepacific.net/static/manage/js/frame.js"
+      ],
+      "changes_made": "将所有 .size() 替换为 .length",
+      "backup_created": true,
+      "verification_method": "grep命令验证替换结果"
+    },
+    "lessons_learned": {
+      "prevention_strategies": [
+        "避免同时加载多个jQuery版本",
+        "统一前端框架版本",
+        "在升级前进行充分测试",
+        "建立版本兼容性检查机制"
+      ],
+      "best_practices": [
+        "使用.length替代.size()以确保兼容性",
+        "定期检查和更新前端依赖",
+        "建立完善的测试流程"
+      ]
+    }
+  }
+}
