@@ -1,0 +1,3 @@
+# Fortunepacific 网站每日自动检查
+# 每天凌晨2点执行
+0 2 * * * /home/FORTUNE网站升级/daily_auto_check.sh >> /home/FORTUNE网站升级/项目文档/cron.log 2>&1
