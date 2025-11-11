@@ -1,0 +1,228 @@
+=== Fortunepacific 系统检查报告 ===
+检查时间: Tue Nov 11 19:43:26 CST 2025
+================================
+
+1. 软件版本信息:
+PHP版本: PHP 5.4.45 (cli) (built: Jun  5 2017 10:08:48) 
+MySQL版本: mysql  Ver 14.14 Distrib 5.6.44, for Linux (x86_64) using  EditLine wrapper
+Nginx版本: Tengine version: Tengine/2.3.3
+nginx version: nginx/1.18.0
+
+2. 网站目录结构:
+total 208
+drwxr-xr-x 10 www  www   4096 Nov  9 21:55 .
+drwxr-xr-x  5 root root  4096 Nov 10 17:28 ..
+-rw-r--r--  1 www  www    479 Oct  7 18:03 404.html
+-rw-r--r--  1 www  www     85 Sep 14 16:46 BingSiteAuth.xml
+-rw-r--r--  1 root root   636 Sep 30 23:02 CLEANUP_COMPLETE.txt
+-rw-r--r--  1 root root   623 Sep 30 22:58 ENVIRONMENT_README.txt
+-rw-r--r--  1 www  www     53 Oct  7 18:03 google23fac3b853e545c0.html
+-rw-r--r--  1 www  www     53 Oct  7 18:03 google9192f01660324020.html
+-rw-r--r--  1 www  www     53 Oct  7 18:03 googlec22a759b4fc9d8c6.html
+-rw-r--r--  1 www  www     53 Oct  7 18:03 googlec60fd7846ade17c5.html
+-rw-r--r--  1 www  www     53 Oct  7 18:03 googledfb78bbb01f9e769.html
+-rw-r--r--  1 www  www     53 Oct  7 18:03 googleef09df70aaf265ae.html
+-rw-r--r--  1 www  www   4099 Jul  7  2019 .htaccess
+drwxr-xr-x  4 www  www   4096 Oct  7 18:03 inc
+-rw-r--r--  1 root root   985 Oct  7 18:03 _index.html
+-rw-r--r--  1 www  www    199 Oct  7 18:03 index.php
+drwxr-xr-x  2 www  www   4096 Oct  7 16:49 js
+-rw-r--r--  1 www  www  14761 Sep 23 16:07 logo.png
+drwxr-xr-x 13 www  www   4096 Nov 11 17:20 manage
+-rwxr-xr-x  1 www  www    766 Sep 11 09:58 robots.txt
+drwxr-xr-x  2 www  www   4096 May 18  2020 sitemap
+-rw-r--r--  1 www  www  89394 Sep 16 18:59 sitemap.xml
+drwxr-xr-x 12 www  www   4096 Mar  5  2020 static
+drwxr-xr-x  6 www  www   4096 Jul  5  2019 tmp
+drwxr-xr-x 71 www  www   4096 Nov 10 17:45 u_file
+drwxr-xr-x  2 www  www   4096 Nov  9 21:55 uploads
+-rw-r--r--  1 root root    58 Jul 17  2019 .user.ini
+
+3. 查找可能的上传目录:
+/www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/third-party/webuploader
+/www/wwwroot/fortunepacific.net/static/js/plugin/operamasks/images/fileupload
+/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload
+/www/wwwroot/fortunepacific.net/uploads
+/www/wwwroot/fortunepacific.net/tmp/photo
+/www/wwwroot/fortunepacific.net/u_file/2006/photo
+/www/wwwroot/fortunepacific.net/u_file/1810/photo
+/www/wwwroot/fortunepacific.net/u_file/1803/photo
+/www/wwwroot/fortunepacific.net/u_file/2407/photo
+/www/wwwroot/fortunepacific.net/u_file/2110/photo
+/www/wwwroot/fortunepacific.net/u_file/2004/photo
+/www/wwwroot/fortunepacific.net/u_file/2506/photo
+/www/wwwroot/fortunepacific.net/u_file/1901/photo
+/www/wwwroot/fortunepacific.net/u_file/2202/photo
+/www/wwwroot/fortunepacific.net/u_file/2507/photo
+/www/wwwroot/fortunepacific.net/u_file/2404/photo
+/www/wwwroot/fortunepacific.net/u_file/1906/photo
+/www/wwwroot/fortunepacific.net/u_file/1903/photo
+/www/wwwroot/fortunepacific.net/u_file/2511/photo
+/www/wwwroot/fortunepacific.net/u_file/2206/photo
+/www/wwwroot/fortunepacific.net/u_file/2402/photo
+/www/wwwroot/fortunepacific.net/u_file/2508/photo
+/www/wwwroot/fortunepacific.net/u_file/2504/photo
+/www/wwwroot/fortunepacific.net/u_file/2502/photo
+/www/wwwroot/fortunepacific.net/u_file/2005/photo
+/www/wwwroot/fortunepacific.net/u_file/2011/photo
+/www/wwwroot/fortunepacific.net/u_file/1904/photo
+/www/wwwroot/fortunepacific.net/u_file/2509/photo
+/www/wwwroot/fortunepacific.net/u_file/1508/photo
+/www/wwwroot/fortunepacific.net/u_file/2010/photo
+/www/wwwroot/fortunepacific.net/u_file/2204/photo
+/www/wwwroot/fortunepacific.net/u_file/1811/photo
+/www/wwwroot/fortunepacific.net/u_file/2201/photo
+/www/wwwroot/fortunepacific.net/u_file/2107/photo
+/www/wwwroot/fortunepacific.net/u_file/2203/photo
+/www/wwwroot/fortunepacific.net/u_file/2403/photo
+/www/wwwroot/fortunepacific.net/u_file/2212/photo
+/www/wwwroot/fortunepacific.net/u_file/2112/photo
+/www/wwwroot/fortunepacific.net/u_file/2503/photo
+/www/wwwroot/fortunepacific.net/u_file/2008/photo
+/www/wwwroot/fortunepacific.net/u_file/1910/photo
+/www/wwwroot/fortunepacific.net/u_file/1902/photo
+/www/wwwroot/fortunepacific.net/u_file/2109/photo
+/www/wwwroot/fortunepacific.net/u_file/2209/photo
+/www/wwwroot/fortunepacific.net/u_file/2401/photo
+/www/wwwroot/fortunepacific.net/u_file/2108/photo
+/www/wwwroot/fortunepacific.net/u_file/1809/photo
+/www/wwwroot/fortunepacific.net/u_file/2405/photo
+/www/wwwroot/fortunepacific.net/u_file/1911/photo
+/www/wwwroot/fortunepacific.net/u_file/2003/photo
+/www/wwwroot/fortunepacific.net/u_file/1908/photo
+/www/wwwroot/fortunepacific.net/u_file/1905/photo
+/www/wwwroot/fortunepacific.net/u_file/1812/photo
+/www/wwwroot/fortunepacific.net/u_file/2106/photo
+/www/wwwroot/fortunepacific.net/u_file/2012/photo
+/www/wwwroot/fortunepacific.net/static/manage/images/photo
+
+4. 检查最近修改的PHP文件:
+3152488    4 -rwxr-xr-x   1 www      www           152 Nov 11 17:20 /www/wwwroot/fortunepacific.net/manage/login.php
+3146119    8 -rw-r--r--   1 www      www          7396 Nov 11 17:33 /www/wwwroot/fortunepacific.net/manage/products/upload.php
+3146126   28 -rw-r--r--   1 www      www         28343 Nov 11 17:31 /www/wwwroot/fortunepacific.net/manage/products/products.php
+3146098   28 -rw-r--r--   1 www      www         28044 Nov 11 17:34 /www/wwwroot/fortunepacific.net/manage/content/photo.php
+3152371    8 -rw-r--r--   1 www      www          7077 Nov 10 19:01 /www/wwwroot/fortunepacific.net/manage/index.php
+
+5. 检查Web服务器进程:
+root     19162  0.0  0.0 103320   888 pts/0    S+   19:43   0:00 grep nginx
+root     26214  0.0  0.2 136584 12132 ?        Ss   Nov10   0:00 nginx: master process /www/server/nginx/sbin/nginx -c /www/server/nginx/conf/nginx.conf
+www      32375  0.0  0.8 167304 33144 ?        S    01:00   0:03 nginx: worker process                                            
+www      32376  0.0  0.8 167304 32820 ?        S    01:00   0:02 nginx: worker process                                            
+www      32377  0.0  0.2 136456  9252 ?        S    01:00   0:00 nginx: cache manager process                                     
+www      14146  0.0  0.4 207364 17328 ?        S    16:40   0:00 php-fpm: pool www                                                                                                                        
+root     19164  0.0  0.0 103320   888 pts/0    S+   19:43   0:00 grep php
+root     32366  0.0  0.1 198324  5068 ?        Ss   01:00   0:01 php-fpm: master process (/www/server/php/54/etc/php-fpm.conf)                                                                            
+www      32367  0.0  0.4 207420 17592 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32368  0.0  0.3 202520 12668 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32369  0.0  0.4 207884 18044 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32370  0.0  0.4 207232 18928 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32371  0.0  0.2 199684  9784 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+root     32374  0.0  0.1 467292  6700 ?        Ss   01:00   0:02 php-fpm: master process (/www/server/php/53/etc/php-fpm.conf)                                                                            
+www      32378  0.0  0.4 472436 19836 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32379  0.0  0.4 471916 16936 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32380  0.0  0.4 471312 16276 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32381  0.0  0.3 470048 13736 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32382  0.0  0.4 471824 16560 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32383  0.0  0.4 471152 16600 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32384  0.0  0.4 472504 19232 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32385  0.0  0.4 472200 19184 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32386  0.0  0.3 470288 15460 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32387  0.0  0.3 470288 15408 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32388  0.0  0.3 469224 13712 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32389  0.0  0.4 471272 16436 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32390  0.0  0.3 469224 14104 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32391  0.0  0.4 470544 16440 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32392  0.0  0.3 469224 13500 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32393  0.0  0.4 472680 17920 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32394  0.0  0.3 470288 13972 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32395  0.0  0.3 469224 13380 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32396  0.0  0.4 475168 19940 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32397  0.0  0.3 470544 15148 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32398  0.0  0.3 469224 13988 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32399  0.0  0.3 470544 15556 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32400  0.0  0.3 469520 14192 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32401  0.0  0.3 469224 13904 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32402  0.0  0.4 472756 20156 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32403  0.0  0.3 470544 14924 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32404  0.0  0.3 469520 13988 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32405  0.0  0.3 469520 15104 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32406  0.0  0.3 469520 14012 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32407  0.0  0.3 469224 13776 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32408  0.0  0.4 472244 19188 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32409  0.0  0.3 469224 13980 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32410  0.0  0.3 469520 13208 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32411  0.0  0.3 469520 14996 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32412  0.0  0.3 470304 15488 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32413  0.0  0.3 470544 15428 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32414  0.0  0.3 469520 14296 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32415  0.0  0.3 469224 14040 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32416  0.0  0.3 469520 16032 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32417  0.0  0.3 469520 15032 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32418  0.0  0.3 470288 14884 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32419  0.0  0.3 470320 14752 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32420  0.0  0.3 470800 16108 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32421  0.0  0.3 470544 15296 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32422  0.0  0.4 469520 16372 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32423  0.0  0.3 469520 14208 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32424  0.0  0.4 471844 16520 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32425  0.0  0.3 469520 14644 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32426  0.0  0.3 469520 14208 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32427  0.0  0.4 472248 19524 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32428  0.0  0.3 469520 14876 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32429  0.0  0.3 470800 15876 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32430  0.0  0.3 469520 14036 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32431  0.0  0.3 470288 15472 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32432  0.0  0.3 469520 14416 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32433  0.0  0.3 469520 14364 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32434  0.0  0.3 470288 15704 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32435  0.0  0.3 470656 15788 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32436  0.0  0.3 470832 15352 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32437  0.0  0.4 471740 18572 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32438  0.0  0.3 469520 14580 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32439  0.0  0.3 469520 15044 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32440  0.0  0.3 469224 13496 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32441  0.0  0.3 469520 14136 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32442  0.0  0.3 469520 14460 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32443  0.0  0.3 469520 14124 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32444  0.0  0.3 469520 14044 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32445  0.0  0.3 470832 15592 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32446  0.0  0.3 469520 14896 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32447  0.0  0.4 471824 16728 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32448  0.0  0.3 470288 14960 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32449  0.0  0.3 469520 14120 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32450  0.0  0.3 469520 14040 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32451  0.0  0.3 469520 14284 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32452  0.0  0.3 469520 14272 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32453  0.0  0.3 469520 14100 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32454  0.0  0.3 469224 14968 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32455  0.0  0.3 471868 16172 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32456  0.0  0.3 471568 16132 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32457  0.0  0.3 470288 14944 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32458  0.0  0.3 469520 14564 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32459  0.0  0.4 471568 16492 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32460  0.0  0.3 471272 15848 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32461  0.0  0.3 469520 14240 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32462  0.0  0.4 471740 18096 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32463  0.0  0.4 471892 16624 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32464  0.0  0.4 471528 16484 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32465  0.0  0.3 469520 14036 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32466  0.0  0.3 470288 13976 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32467  0.0  0.3 469520 13900 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32468  0.0  0.3 469520 14592 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32469  0.0  0.3 469520 13208 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32470  0.0  0.3 469992 13240 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32471  0.0  0.3 469520 13140 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32472  0.0  0.3 469224 12712 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32473  0.0  0.3 469248 12924 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32474  0.0  0.4 471392 16340 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32475  0.0  0.3 470288 14960 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32476  0.0  0.3 470288 15584 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+www      32477  0.0  0.3 470288 14716 ?        S    01:00   0:00 php-fpm: pool www                                                                                                                        
+
+6. 检查磁盘使用情况:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        20G   12G  7.4G  61% /
+tmpfs           1.9G   16K  1.9G   1% /dev/shm
+/dev/vdb1        59G   21G   36G  37% /www
+
+=== 检查完成 ===
