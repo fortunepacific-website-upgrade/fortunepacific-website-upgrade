@@ -1,0 +1,52 @@
+{
+  "complete_automation_system": {
+    "date": "2025-11-12",
+    "server_side_automation": {
+      "daily_tasks": {
+        "schedule": "每天凌晨2点",
+        "script": "/home/FORTUNE网站升级/daily_auto_check.sh",
+        "functions": [
+          "系统健康检查",
+          "jQuery兼容性检查",
+          "自动Git备份",
+          "生成检查报告"
+        ]
+      },
+      "periodic_tasks": {
+        "schedule": "每3小时",
+        "script": "/home/FORTUNE网站升级/periodic_cleanup.sh",
+        "functions": [
+          "清理临时文件",
+          "清理旧日志",
+          "重启PHP-FPM",
+          "重启Nginx",
+          "释放系统资源"
+        ]
+      }
+    },
+    "client_side_operations": {
+      "requirements": [
+        "仅在需要时启动",
+        "用于特殊开发任务",
+        "处理复杂问题分析"
+      ],
+      "best_practices": [
+        "关闭不用的VS Code窗口",
+        "定期重启本地电脑",
+        "及时提交代码避免丢失"
+      ]
+    },
+    "system_performance": {
+      "automatic_optimization": [
+        "定时清理防止卡顿",
+        "服务重启释放内存",
+        "磁盘空间监控"
+      ],
+      "manual_optimization": [
+        "定期更新软件版本",
+        "清理浏览器缓存",
+        "关闭后台无用程序"
+      ]
+    }
+  }
+}

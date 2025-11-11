@@ -1,0 +1,47 @@
+{
+  "vscode_automation_limitations": {
+    "date": "2025-11-12",
+    "server_side_automation": {
+      "capabilities": [
+        "宝塔定时任务可完全自动执行",
+        "无需人工干预",
+        "无需电脑开机",
+        "服务器独立运行"
+      ],
+      "current_implementations": [
+        "每日凌晨2点自动检查(daily_auto_check.sh)",
+        "每3小时自动清理(periodic_cleanup.sh)"
+      ]
+    },
+    "client_side_limitations": {
+      "vscode_requirements": [
+        "需要电脑开机",
+        "需要用户登录系统",
+        "需要VS Code运行",
+        "需要图形界面支持"
+      ],
+      "灵码_limitations": [
+        "需要人工触发",
+        "需要打开VS Code",
+        "无法后台自动执行"
+      ],
+      "workaround_suggestions": [
+        "使用服务器端脚本替代VS Code功能",
+        "通过宝塔面板进行大部分操作",
+        "只在需要时打开VS Code进行特殊任务"
+      ]
+    },
+    "performance_optimization": {
+      "server_side_solutions": [
+        "定期自动清理避免卡顿",
+        "服务重启释放内存",
+        "日志轮转避免磁盘满"
+      ],
+      "manual_maintenance": [
+        "定期重启个人电脑",
+        "及时关闭不用的程序",
+        "清理浏览器缓存"
+      ]
+    }
+  }
+}

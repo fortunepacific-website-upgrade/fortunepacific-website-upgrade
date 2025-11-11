@@ -1,0 +1,36 @@
+=== Fortunepacific 系统健康检查 ===
+检查时间: Wed Nov 12 02:00:01 CST 2025
+================================
+
+1. 服务状态检查:
+Nginx状态: 未使用systemctl管理
+PHP-FPM状态: 未使用systemctl管理
+
+2. 进程检查:
+Nginx进程数: 4
+PHP进程数: 107
+
+3. 磁盘空间检查:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        20G   12G  7.4G  61% /
+tmpfs           1.9G   16K  1.9G   1% /dev/shm
+/dev/vdb1        59G   20G   37G  36% /www
+
+4. 内存使用情况:
+             total       used       free     shared    buffers     cached
+Mem:          3.9G       1.3G       2.6G       9.8M        28M       180M
+-/+ buffers/cache:       1.1G       2.8G
+Swap:         1.0G         0B       1.0G
+
+5. 网站可访问性检查:
+主站状态: 200
+管理后台状态: 200
+
+6. 上传目录检查:
+上传目录文件数: 7617
+最近修改的上传文件:
+/www/wwwroot/fortunepacific.net/u_file/2511/products/11/9f27f0aa67.webp
+/www/wwwroot/fortunepacific.net/u_file/2511/products/11/9f27f0aa67.webp.240x240.webp
+/www/wwwroot/fortunepacific.net/u_file/2511/products/11/9f27f0aa67.webp.500x500.webp
+
+=== 检查完成 ===
