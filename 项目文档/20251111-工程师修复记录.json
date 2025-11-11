@@ -1,0 +1,64 @@
+{
+  "engineer_operation_record": {
+    "date": "2025-11-11",
+    "engineer_type": "售后服务工程师",
+    "task": "照片上传功能修复",
+    "snapshot_name": "20251111恢复照片上传永久保存",
+    "identified_files": [
+      "/www/wwwroot/fortunepacific.net/manage/products/upload.php",
+      "/www/wwwroot/fortunepacific.net/manage/content/photo.php",
+      "/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/jquery.fileupload-ui.js"
+    ],
+    "modified_files": [
+      {
+        "file": "/www/wwwroot/fortunepacific.net/manage/products/upload.php",
+        "modification_time": "2025-11-11 17:33",
+        "likely_purpose": "产品图片上传处理逻辑"
+      },
+      {
+        "file": "/www/wwwroot/fortunepacific.net/manage/content/photo.php",
+        "modification_time": "2025-11-11 17:34",
+        "likely_purpose": "内容管理照片处理逻辑"
+      },
+      {
+        "file": "/www/wwwroot/fortunepacific.net/manage/products/products.php",
+        "modification_time": "2025-11-11 17:31",
+        "likely_purpose": "产品管理相关功能"
+      },
+      {
+        "file": "/www/wwwroot/fortunepacific.net/manage/login.php",
+        "modification_time": "2025-11-11 17:20",
+        "likely_purpose": "权限或会话处理相关"
+      }
+    ],
+    "upload_directories": [
+      "/www/wwwroot/fortunepacific.net/uploads",
+      "/www/wwwroot/fortunepacific.net/u_file/"
+    ],
+    "conclusion": "工程师通过修改上传处理文件修复了照片上传功能，此方法应为原开发者的标准解决方案"
+  },
+  "system_information": {
+    "software_versions": {
+      "php": "5.4.45",
+      "mysql": "5.6.44",
+      "nginx": "Tengine/2.3.3"
+    },
+    "important_paths": {
+      "main_upload_directory": "/www/wwwroot/fortunepacific.net/uploads",
+      "organized_upload_directories": "/www/wwwroot/fortunepacific.net/u_file/",
+      "management_system": "/www/wwwroot/fortunepacific.net/manage/",
+      "frontend_assets": "/www/wwwroot/fortunepacific.net/static/"
+    }
+  },
+  "future_reference": {
+    "avoid_paths": [
+      "避免直接修改系统核心文件",
+      "避免在非标准目录上传文件"
+    ],
+    "recommended_paths": [
+      "使用/u_file/目录进行文件上传",
+      "通过/manage/目录管理系统功能",
+      "通过/static/目录管理前端资源"
+    ]
+  }
+}
