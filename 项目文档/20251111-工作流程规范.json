@@ -1,0 +1,21 @@
+{
+  "workflow_standardization": {
+    "date": "2025-11-11",
+    "environment": "Alibaba Cloud ECS with BaoTa Panel",
+    "primary_operations": [
+      "所有Git操作在宝塔终端执行",
+      "使用 /home/FORTUNE网站升级/auto-push.sh 进行自动推送",
+      "定期检查推送文件状态"
+    ],
+    "daily_routine": {
+      "check_status": "git status",
+      "view_history": "git log --oneline -5",
+      "verify_files": "git ls-tree -r master --name-only"
+    },
+    "maintenance_tasks": [
+      "执行系统检查脚本",
+      "运行jQuery兼容性检查",
+      "执行自动推送脚本"
+    ]
+  }
+}

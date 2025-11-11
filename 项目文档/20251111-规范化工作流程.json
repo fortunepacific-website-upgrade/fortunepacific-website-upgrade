@@ -1,0 +1,36 @@
+{
+  "standardized_workflow": {
+    "date": "2025-11-11",
+    "issue_resolved": "文件夹路径混乱和Git历史分离问题",
+    "corrected_setup": {
+      "primary_working_directory": "C:\\Users\\华为\\FORTUNE网站升级",
+      "reason": "与服务器路径命名一致，便于同步管理",
+      "vscode_workspace": "使用此路径确保灵码对话连续性"
+    },
+    "cleanup_actions": [
+      "删除多余的英文路径克隆文件夹",
+      "保留必要的备份文件夹一段时间",
+      "统一使用中文路径作为主要工作目录"
+    ],
+    "daily_workflow": {
+      "morning_routine": [
+        "打开 C:\\Users\\华为\\FORTUNE网站升级 文件夹",
+        "执行: git pull origin master (获取最新更改)"
+      ],
+      "work_completion_routine": [
+        "执行: git add .",
+        "执行: git commit -m \"工作内容说明\"",
+        "执行: git push origin master (推送更改到GitHub)"
+      ],
+      "weekly_routine": [
+        "执行系统检查脚本",
+        "清理不必要的备份文件"
+      ]
+    },
+    "vscode_guidance": {
+      "primary_folder": "始终打开 C:\\Users\\华为\\FORTUNE网站升级",
+      "gitlens_usage": "在此路径下使用GitLens功能",
+      "chat_continuity": "确保灵码对话历史连续性"
+    }
+  }
+}
