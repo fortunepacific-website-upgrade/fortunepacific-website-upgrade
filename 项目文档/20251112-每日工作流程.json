@@ -1,0 +1,32 @@
+{
+  "daily_workflow": {
+    "date_established": "2025-11-12",
+    "work_environment": "仅使用宝塔终端",
+    "daily_routine": {
+      "morning": [
+        "登录宝塔面板",
+        "执行系统检查脚本: /home/FORTUNE网站升级/system_health_check.sh",
+        "检查Git状态: git status"
+      ],
+      "work_time": [
+        "执行日常网站维护任务",
+        "创建或修改必要文件",
+        "定期保存进度"
+      ],
+      "end_of_day": [
+        "保存所有工作进度",
+        "执行自动推送: /home/FORTUNE网站升级/auto-push.sh",
+        "确认提交成功: git log --oneline -1"
+      ]
+    },
+    "tools_to_ignore": {
+      "vscode_extensions": "GitLens Inspect是正常功能，无需特别关注",
+      "external_logins": "无需登录GitHub网站",
+      "workspace_selection": "无需选择VS Code工作区"
+    },
+    "emergency_procedures": {
+      "if_issues_arise": "联系技术支持或查看系统日志",
+      "backup_verification": "定期检查GitHub仓库确认备份正常"
+    }
+  }
+}
