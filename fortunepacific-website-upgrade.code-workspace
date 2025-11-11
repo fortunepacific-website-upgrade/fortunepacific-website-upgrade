@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "FORTUNE网站升级主项目"
+    }
+  ],
+  "settings": {
+    "git.autorefresh": true,
+    "git.autoFetch": true
+  }
+}
