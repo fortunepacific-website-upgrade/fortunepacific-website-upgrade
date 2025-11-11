@@ -1,0 +1,30 @@
+{
+  "path_specification": {
+    "date": "2025-11-11",
+    "issue_identified": "Windows中文系统路径混乱问题",
+    "problem_description": {
+      "local_windows_system": "C:\\Users\\华为\\FORTUNE网站升级 (中文路径)",
+      "cloned_github_repo": "C:\\Users\\华为\\fortunepacific-website-upgrade (英文路径)",
+      "server_path": "/home/FORTUNE网站升级 (服务器路径)"
+    },
+    "solution_implemented": {
+      "primary_working_directory": "C:\\Users\\华为\\FORTUNE网站升级",
+      "reason": "保持与服务器路径命名一致，便于同步和管理",
+      "vscode_workspace": "应始终打开此中文路径文件夹以保持灵码聊天记录"
+    },
+    "synchronization_strategy": {
+      "manual_sync": "使用Git命令在两个文件夹间同步",
+      "sync_commands": [
+        "git pull origin master (从GitHub获取最新更改)",
+        "git push origin master (推送本地更改到GitHub)"
+      ]
+    },
+    "future_considerations": {
+      "recommendation": "考虑统一路径命名规范",
+      "options": [
+        "将本地文件夹重命名为与服务器一致的中文名称",
+        "在VS Code中使用工作区文件(.code-workspace)管理多个文件夹"
+      ]
+    }
+  }
+}
