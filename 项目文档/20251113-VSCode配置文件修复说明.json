@@ -1,0 +1,83 @@
+{
+  "vscode_configuration_fix_instructions": {
+    "date": "2025-11-13",
+    "critical_issue": "VS Code配置文件路径和内容问题",
+    "issues_identified": {
+      "user_settings_confusion": {
+        "problem": "按 Ctrl+Shift+P → Preferences: Open Settings (JSON) 显示的是项目设置而非用户设置",
+        "correct_path": "C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json",
+        "incorrect_behavior": "显示了 .vscode/settings.json 路径且内容为空"
+      },
+      "missing_user_settings_content": {
+        "problem": "用户设置文件内容丢失",
+        "correct_content": {
+          "update.mode": "none",
+          "extensions.autoUpdate": false,
+          "extensions.autoCheckUpdates": false,
+          "tongyi-lingma.autoTrigger": false,
+          "tongyi-lingma.enableInlineCompletion": false,
+          "tongyi-lingma.enableAutoCompletion": false,
+          "tongyi-lingma.maxTokens": 1024,
+          "tongyi-lingma.timeout": 9000,
+          "tongyi-lingma.enableCodeReview": false,
+          "tongyi-lingma.retryAttempts": 2,
+          "tongyi-lingma.enableRegularResponse": true,
+          "tongyi-lingma.modelProvider": "local",
+          "tongyi-lingma.enableLocalModel": true,
+          "tongyi-lingma.localModelMaxTokens": 1024,
+          "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+          },
+          "editor.suggestOnTriggerCharacters": false,
+          "editor.quickSuggestionsDelay": 1000,
+          "editor.wordBasedSuggestions": "off",
+          "editor.largeFileOptimizations": false,
+          "editor.inlineSuggest.enabled": false,
+          "git.enableSmartCommit": false,
+          "git.autoRepositoryDetection": false,
+          "files.autoSave": "afterDelay",
+          "files.autoSaveDelay": 15000,
+          "telemetry.enableTelemetry": false,
+          "workbench.startupEditor": "none",
+          "workbench.colorTheme": "Default Dark+",
+          "window.titleBarStyle": "custom"
+        }
+      },
+      "workspace_file_verification": {
+        "path": "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace",
+        "current_content_correct": true,
+        "folders_section": {
+          "name": "FORTUNE网站升级",
+          "path": "."
+        },
+        "extensions_section": {
+          "recommendations": [
+            "wordpress.wordpress-snippet",
+            "bmewburn.vscode-intelephense-client",
+            "formulahendry.auto-rename-tag",
+            "tongyi.tongyi-lingma"
+          ]
+        }
+      }
+    },
+    "fix_instructions": {
+      "user_settings_fix": [
+        "在本地Windows环境中手动创建或恢复用户设置文件",
+        "路径: C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json",
+        "内容: 使用上述正确的配置内容"
+      ],
+      "workspace_verification": [
+        "确认工作区文件路径正确",
+        "确认工作区文件内容完整",
+        "确保工作区文件在Git中正确版本控制"
+      ],
+      "separation_principle": [
+        "用户设置文件: 仅存在于本地，不上传到Git",
+        "项目设置文件: 存在于项目.vscode目录中，上传到Git",
+        "工作区文件: 存在于项目根目录，上传到Git"
+      ]
+    }
+  }
+}
