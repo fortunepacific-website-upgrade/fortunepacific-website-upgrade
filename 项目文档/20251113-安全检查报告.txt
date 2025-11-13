@@ -1,0 +1,33 @@
+=== Fortunepacific 网站安全文件检查 ===
+检查时间: Thu Nov 13 21:05:07 CST 2025
+==============================
+1. 最近7天修改的PHP文件:
+3145761   12 -rw-r--r--   1 www      www          8904 Nov 13 14:15 /www/wwwroot/fortunepacific.net/inc/class/ly200.class.php
+3146119    8 -rw-r--r--   1 www      www          7396 Nov 11 17:33 /www/wwwroot/fortunepacific.net/manage/products/upload.php
+3146126   28 -rw-r--r--   1 www      www         28343 Nov 11 17:31 /www/wwwroot/fortunepacific.net/manage/products/products.php
+3146098   28 -rw-r--r--   1 www      www         28044 Nov 11 17:34 /www/wwwroot/fortunepacific.net/manage/content/photo.php
+3146132   12 -rw-r--r--   1 www      www         10312 Nov 13 13:43 /www/wwwroot/fortunepacific.net/manage/seo/overview.php
+3152371    8 -rw-r--r--   1 www      www          7077 Nov 10 19:01 /www/wwwroot/fortunepacific.net/manage/index.php
+
+2. 检查可疑的上传文件:
+
+3. 检查webshell特征:
+/www/wwwroot/fortunepacific.net/inc/class/excel/class.writeexcel_format.inc.php:               case tainted data is passed to the eval(). */
+/www/wwwroot/fortunepacific.net/inc/class/excel/class.writeexcel_format.inc.php:               some numerical format strings being evaluated as numbers, for
+/www/wwwroot/fortunepacific.net/inc/class/excel/class.writeexcel_format.inc.php:                eval("\$this->set_$value();");
+/www/wwwroot/fortunepacific.net/inc/class/excel/class.writeexcel_format.inc.php:                eval("\$this->set_$key('$value');");
+/www/wwwroot/fortunepacific.net/inc/class/excel/class.writeexcel_workbook.inc.php:        # but would evaluate to zero.
+
+4. 检查文件权限:
+777权限文件:
+/www/wwwroot/fortunepacific.net/tmp/photo/080992cc72.jpg.500x500.jpg
+/www/wwwroot/fortunepacific.net/tmp/photo/080992cc72.jpg.240x240.jpg
+/www/wwwroot/fortunepacific.net/u_file/1810/products/22/371f2695ef.jpg.500x500.jpg
+/www/wwwroot/fortunepacific.net/u_file/1810/products/22/371f2695ef.jpg.240x240.jpg
+/www/wwwroot/fortunepacific.net/u_file/2407/products/03/e393bbcf48.webp.240x240.webp
+
+5. 检查可写目录:
+可写目录数量:
+0
+
+=== 安全文件检查完成 ===

@@ -1,0 +1,76 @@
+=== Fortunepacific 网站PHP框架结构分析 ===
+分析时间: Thu Nov 13 21:05:07 CST 2025
+==================================
+1. 主要目录结构:
+drwxr-xr-x 10 www  www   4096 Nov  9 21:55 .
+drwxr-xr-x  5 root root  4096 Nov 10 17:28 ..
+drwxr-xr-x  4 www  www   4096 Oct  7 18:03 inc
+drwxr-xr-x  2 www  www   4096 Oct  7 16:49 js
+drwxr-xr-x 13 www  www   4096 Nov 13 13:37 manage
+drwxr-xr-x  2 www  www   4096 May 18  2020 sitemap
+drwxr-xr-x 12 www  www   4096 Mar  5  2020 static
+drwxr-xr-x  6 www  www   4096 Jul  5  2019 tmp
+drwxr-xr-x 71 www  www   4096 Nov 10 17:45 u_file
+drwxr-xr-x  2 www  www   4096 Nov  9 21:55 uploads
+
+2. 管理后台目录结构:
+total 84
+drwxr-xr-x 13 www  www  4096 Nov 13 13:37 .
+drwxr-xr-x 10 www  www  4096 Nov  9 21:55 ..
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 account
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 content
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 email
+-rw-r--r--  1 www  www  7077 Nov 10 19:01 index.php
+-rw-r--r--  1 root root 7090 Nov 10 19:01 index.php.backup_20251110_190143
+-rw-r--r--  1 root root 7022 Oct  7 22:03 index.php.before_compat_fix
+-rw-r--r--  1 root root 6909 Oct  7 22:32 index.php.before_final_fix
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 inquiry
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 mta
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 products
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 seo
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 service
+drwxr-xr-x  3 www  www  4096 Oct  7 18:03 set
+drwxr-xr-x  5 www  www  4096 Jul  5  2019 static
+drwxr-xr-x  2 www  www  4096 Oct  7 18:03 user
+
+3. 静态资源目录结构:
+total 48
+drwxr-xr-x 12 www www 4096 Mar  5  2020 .
+drwxr-xr-x 10 www www 4096 Nov  9 21:55 ..
+drwxr-xr-x  3 www www 4096 Oct  7 18:03 blog
+drwxr-xr-x  2 www www 4096 Jul  5  2019 css
+drwxr-xr-x  3 www www 4096 Jul 25  2019 font
+drwxr-xr-x  2 www www 4096 Jul  5  2019 ico
+drwxr-xr-x  7 www www 4096 Jul  5  2019 images
+drwxr-xr-x  4 www www 4096 Nov 11 20:42 js
+drwxr-xr-x  6 www www 4096 Jul  5  2019 manage
+
+4. 核心类文件分析:
+ly200.class.php文件位置:
+/www/wwwroot/fortunepacific.net/inc/class/ly200.class.php
+
+5. 配置文件分析:
+/www/wwwroot/fortunepacific.net/inc/config.php
+/www/wwwroot/fortunepacific.net/inc/nav_config.php
+/www/wwwroot/fortunepacific.net/inc/class/sitemap/config.inc.php
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/nl/config
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/hu/config
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/no/config
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/ru/config
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/pt/config
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/pt/br/config
+/www/wwwroot/fortunepacific.net/inc/class/excel.class/PHPExcel/locale/pl/config
+
+6. 数据库连接文件:
+/www/wwwroot/fortunepacific.net/inc/class/db.class.php
+/www/wwwroot/fortunepacific.net/u_file/1810/file/9ac714edb0.jpg
+/www/wwwroot/fortunepacific.net/u_file/2407/products/03/15963bdb90.webp.500x500.webp
+/www/wwwroot/fortunepacific.net/u_file/2407/products/03/15963bdb90.webp.default.webp
+/www/wwwroot/fortunepacific.net/u_file/2407/products/03/15963bdb90.webp.240x240.webp
+/www/wwwroot/fortunepacific.net/u_file/2407/products/03/15963bdb90.webp
+/www/wwwroot/fortunepacific.net/u_file/2506/products/24/4db7dad781.webp.240x240.webp
+/www/wwwroot/fortunepacific.net/u_file/2506/products/24/4db7dad781.webp.default.webp
+/www/wwwroot/fortunepacific.net/u_file/2506/products/24/4db7dad781.webp
+/www/wwwroot/fortunepacific.net/u_file/2506/products/24/4db7dad781.webp.500x500.webp
+
+=== PHP框架结构分析完成 ===

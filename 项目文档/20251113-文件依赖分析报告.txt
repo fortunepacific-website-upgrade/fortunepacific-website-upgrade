@@ -1,0 +1,107 @@
+=== Fortunepacific 网站文件调用关系分析 ===
+分析时间: Thu Nov 13 21:05:07 CST 2025
+=================================
+1. 管理后台入口文件分析:
+index.php内容预览:
+<?php
+include('../inc/global.php');
+include('static/inc/init.php');
+ob_start();
+
+$isHome=($c['manage']['module']=='account'?1:0);
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="renderer" content="webkit">
+<link rel="shortcut icon" href="<?=$c['manage']['config']['IcoPath'];?>" />
+<title>{/frame.system_name/}</title>
+<?=ly200::load_static('/static/css/global.css', '/static/manage/css/frame.css', '/static/manage/css/animate.css');?>
+<?php
+if($c['manage']['module']=="content" && $c['manage']['action']=="photo"){
+
+2. 常见包含文件分析:
+/www/wwwroot/fortunepacific.net/manage/set/inc/config.user.edit.php:					<td width="15%" nowrap="nowrap">{/global.required/}</td>
+/www/wwwroot/fortunepacific.net/manage/set/inc/config.inquiry.edit.php:					<td width="15%" nowrap="nowrap">{/global.required/}</td>
+/www/wwwroot/fortunepacific.net/manage/set/inc/config.inquiry.edit.php:					<td width="15%" nowrap="nowrap">{/global.required/}</td>
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			include('inc/config.basis.php');
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			include('inc/config.seo.php');
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			include('inc/config.switch.php');
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			include('inc/config.language.php');
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			include('inc/config.google_translate.php');
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			(int)$c['FunVersion'] && include('inc/config.inquiry.php');
+/www/wwwroot/fortunepacific.net/manage/set/config.php:			include('inc/config.contact.php');
+
+3. JS文件引用分析:
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/vendor/jquery.ui.widget.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/external/tmpl.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/external/load-image.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/external/canvas-to-blob.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/external/jquery.blueimp-gallery.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/jquery.iframe-transport.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/jquery.fileupload.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/jquery.fileupload-process.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/jquery.fileupload-image.js"></script>
+/www/wwwroot/fortunepacific.net/manage/products/upload.php:<script src="/static/js/plugin/file_upload/js/jquery.fileupload-audio.js"></script>
+
+4. CSS文件引用分析:
+/www/wwwroot/fortunepacific.net/manage/index.php.before_final_fix:<link rel="shortcut icon" href="<?=$c['manage']['config']['IcoPath'];?>" />
+/www/wwwroot/fortunepacific.net/manage/index.php.backup_20251110_190143:<link rel="shortcut icon" href="<?=$c['manage']['config']['IcoPath'];?>" />
+/www/wwwroot/fortunepacific.net/manage/index.php.before_compat_fix:<link rel="shortcut icon" href="<?=$c['manage']['config']['IcoPath'];?>" />
+/www/wwwroot/fortunepacific.net/manage/index.php:<link rel="shortcut icon" href="<?=$c['manage']['config']['IcoPath'];?>" />
+
+5. 关键功能文件分析:
+产品管理文件:
+total 116
+drwxr-xr-x  2 www www  4096 Oct  7 18:03 .
+drwxr-xr-x 13 www www  4096 Nov 13 13:37 ..
+-rw-r--r--  1 www www  4126 Oct  7 18:03 attribute.php
+-rw-r--r--  1 www www  8497 Oct  7 18:03 category.php
+-rw-r--r--  1 www www  8012 Oct  7 18:03 inquiry.inquiry.php
+-rw-r--r--  1 www www  3790 Oct  7 18:03 inquiry.set.php
+-rw-r--r--  1 www www  8197 Oct  7 18:03 model.php
+-rw-r--r--  1 www www 28343 Nov 11 17:31 products.php
+-rw-r--r--  1 www www  7788 Oct  7 18:03 review.php
+-rw-r--r--  1 www www  2446 Oct  7 18:03 show.php
+-rw-r--r--  1 www www  8497 Oct  7 18:03 upload_new.php
+-rw-r--r--  1 www www  7396 Nov 11 17:33 upload.php
+-rw-r--r--  1 www www  1284 Oct  7 18:03 watermark.php
+内容管理文件:
+total 232
+drwxr-xr-x  2 www www  4096 Oct  7 18:03 .
+drwxr-xr-x 13 www www  4096 Nov 13 13:37 ..
+-rw-r--r--  1 www www 13540 Oct  7 18:03 ad.php
+-rw-r--r--  1 www www 22296 Oct  7 18:03 blog.php
+-rw-r--r--  1 www www 16595 Oct  7 18:03 case.php
+-rw-r--r--  1 www www 20319 Oct  7 18:03 download.php
+-rw-r--r--  1 www www  6499 Oct  7 18:03 feedback.feedback.php
+-rw-r--r--  1 www www  1953 Oct  7 18:03 feedback.set.php
+-rw-r--r--  1 www www 13036 Oct  7 18:03 info.php
+-rw-r--r--  1 www www 21147 Oct  7 18:03 news.php
+-rw-r--r--  1 www www  7338 Oct  7 18:03 page.feedback_other.php
+-rw-r--r--  1 www www  7415 Oct  7 18:03 page.feed_set.php
+-rw-r--r--  1 www www 18041 Oct  7 18:03 page.page.php
+-rw-r--r--  1 www www 13124 Oct  7 18:03 page.php
+-rw-r--r--  1 www www  4952 Oct  7 18:03 partner.php
+-rw-r--r--  1 www www 28044 Nov 11 17:34 photo.php
+-rw-r--r--  1 www www  1440 Oct  7 18:03 show.php
+SEO管理文件:
+total 84
+drwxr-xr-x  2 www www  4096 Oct  7 18:03 .
+drwxr-xr-x 13 www www  4096 Nov 13 13:37 ..
+-rw-r--r--  1 www www  7169 Oct  7 18:03 ads.php
+-rw-r--r--  1 www www  5766 Oct  7 18:03 article.php
+-rw-r--r--  1 www www  9684 Oct  7 18:03 blog.php
+-rw-r--r--  1 www www  3761 Oct  7 18:03 description.php
+-rw-r--r--  1 www www  2631 Oct  7 18:03 keyword.php
+-rw-r--r--  1 www www  2068 Oct  7 18:03 keyword_track.php
+-rw-r--r--  1 www www 11464 Oct  7 18:03 links.php
+-rw-r--r--  1 www www  5757 Oct  7 18:03 mobile.php
+-rw-r--r--  1 www www 10312 Nov 13 13:43 overview.php
+-rw-r--r--  1 www www  2163 Oct  7 18:03 sitemap.php
+
+=== 文件调用关系分析完成 ===
