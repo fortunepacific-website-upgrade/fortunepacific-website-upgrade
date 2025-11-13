@@ -1,0 +1,51 @@
+{
+  "environment_separation_operating_procedures": {
+    "date": "2025-11-13",
+    "critical_understanding": "必须严格区分本地Windows环境和服务器Linux环境的操作",
+    "local_windows_operations": {
+      "tools": [
+        "VS Code (代码编辑)",
+        "Git Bash (本地Git操作)",
+        "浏览器开发者工具 (调试分析)"
+      ],
+      "files_to_manage": [
+        "C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json (VS Code用户设置)",
+        "C:\\Users\\华为\\FORTUNE网站升级\\.vscode\\settings.json (项目设置)",
+        "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace (工作区文件)",
+        "本地项目文档和配置文件"
+      ],
+      "operations": [
+        "代码编辑和分析",
+        "本地测试和调试",
+        "通过Git提交更改到GitHub"
+      ]
+    },
+    "server_linux_operations": {
+      "tools": [
+        "宝塔面板",
+        "终端命令行",
+        "系统监控工具"
+      ],
+      "files_to_manage": [
+        "/home/FORTUNE网站升级/*.sh (自动化脚本)",
+        "/home/FORTUNE网站升级/项目文档/*.json (项目文档)",
+        "/home/FORTUNE网站升级/.git (Git版本控制)"
+      ],
+      "operations": [
+        "网站运行和维护",
+        "执行自动化脚本",
+        "通过Git同步最新代码"
+      ]
+    },
+    "synchronization_protocol": {
+      "local_to_server": "本地编辑 → Git提交 → GitHub → 服务器Git拉取",
+      "server_to_local": "服务器修改 → Git提交 → GitHub → 本地Git拉取",
+      "frequency": "每日工作开始前和结束后必须同步"
+    },
+    "absolute_rules": {
+      "no_cross_environment_files": "本地配置文件绝不上传到服务器",
+      "no_server_vscode_files": "服务器端绝不创建VS Code配置文件",
+      "git_everything": "所有项目相关文件都通过Git版本控制"
+    }
+  }
+}

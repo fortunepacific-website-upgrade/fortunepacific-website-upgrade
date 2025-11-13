@@ -1,0 +1,30 @@
+{
+  "environment_separation_clarification": {
+    "date": "2025-11-13",
+    "critical_correction": "必须严格区分本地Windows环境和服务器Linux环境",
+    "local_windows_environment": {
+      "real_path": "C:\\Users\\华为\\FORTUNE网站升级",
+      "configuration_files": [
+        "C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json (用户设置)",
+        "C:\\Users\\华为\\FORTUNE网站升级\\.vscode\\settings.json (项目设置)",
+        "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace (工作区文件)",
+        "C:\\Users\\华为\\FORTUNE网站升级\\配置文档\\* (本地项目文档)"
+      ],
+      "purpose": "代码编辑、分析、本地测试"
+    },
+    "server_linux_environment": {
+      "real_path": "/home/FORTUNE网站升级",
+      "configuration_files": [
+        "/home/FORTUNE网站升级/*.sh (自动化脚本)",
+        "/home/FORTUNE网站升级/项目文档/*.json (服务器项目文档)",
+        "/home/FORTUNE网站升级/.git (版本控制)"
+      ],
+      "purpose": "网站运行、维护、部署"
+    },
+    "synchronization": {
+      "method": "Git版本控制",
+      "direction": "本地 ↔ 服务器 通过GitHub同步"
+    },
+    "previous_mistake_acknowledged": "错误地在服务器端创建了本应存在于本地的配置文件"
+  }
+}

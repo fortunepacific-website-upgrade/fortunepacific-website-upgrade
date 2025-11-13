@@ -1,0 +1,91 @@
+{
+  "版本": "2025年10月15日版本",
+  "站点信息": {
+    "运行站点管理后台": "https://www.fortunepacific.net/manage/",
+    "运行站点": "https://www.fortunepacific.net/",
+    "接入方式": "CNAME",
+    "区域": "全球（不包含中国内地）",
+    "ESA接入模式": "CNAME接入"
+  },
+  "SSL/TLS配置": {
+    "拉平顶级的CNAME": true,
+    "开启SSL/TLS": true,
+    "回源协议和端口": {
+      "HTTP端口": 80,
+      "HTTPS端口": 443
+    },
+    "边缘证书": {
+      "证书名称": "cert-14598554",
+      "强制HTTPS": false
+    },
+    "TLS协议版本": ["TLSv1.2", "TLSv1.3"],
+    "OCSP Stapling": true,
+    "随机加密": false,
+    "HSTS": {
+      "开启": true,
+      "过期时间": "6个月",
+      "子域继承": true,
+      "预加载": true
+    }
+  },
+  "安全配置": {
+    "智能限频": {
+      "开启": true,
+      "防护等级": "宽松",
+      "执行动作": "观察"
+    },
+    "防盗刷": {
+      "开启": true,
+      "执行动作": "观察"
+    },
+    "客户端证书": "无",
+    "源站证书": {
+      "回源协议": "跟随客户端协议",
+      "端口": [80, 443],
+      "源站证书校验": false,
+      "回源双向校验": false
+    }
+  },
+  "WAF配置": {
+    "自定义规则": "无",
+    "频次控制规则": "无",
+    "托管规则内容": {
+      "所有传入请求执行防护等级": "中等",
+      "处置动作": "观察"
+    },
+    "扫描防护规则": "无",
+    "白名单规则": "无",
+    "IP访问规则": "无"
+  },
+  "Bots配置": {
+    "绝对是Bot": "观察",
+    "可能是Bot": "观察",
+    "已通过验证的Bot": "无",
+    "对静态资源请求生效": "无",
+    "JavaScript检测": "无"
+  },
+  "客户端IP定义": {
+    "识别的客户端IP类型": "建连IP",
+    "安全级别": "中等"
+  },
+  "缓存配置": {
+    "查询字符串": "全部忽略",
+    "浏览器缓存过期时间": "4个月",
+    "边缘缓存过期时间": "1年",
+    "开发模式": true,
+    "查询字符串排序": true,
+    "多级缓存": "边缘缓存层 + 智能缓存层"
+  },
+  "边缘函数配置": [
+    {
+      "函数名称": "fortunepacific-admin-bypass",
+      "路由表达式": "(lower(http.request.uri.path) eq \"/manage\") or (lower(http.request.uri.path) eq \"/admin\")",
+      "功能描述": "管理路径强制直接回源，完全不缓存"
+    },
+    {
+      "函数名称": "fortunepacific-main-site",
+      "路由表达式": "(not lower(http.request.uri.path) in {\"/manage\" \"/admin\"} and not lower(http.request.uri.path.extension) in {\"css\" \"js\" \"jpg\" \"jpeg\" \"png\" \"gif\" \"svg\" \"ico\" \"webp\" \"json\" \"xml\" \"pdf\" \"woff\" \"ttf\" \"eot\" \"mp4\" \"avi\" \"mov\" \"zip\" \"rar\" \"7z\"})",
+      "功能描述": "主站点SEO优化和代码注入"
+    }
+  ]
+}

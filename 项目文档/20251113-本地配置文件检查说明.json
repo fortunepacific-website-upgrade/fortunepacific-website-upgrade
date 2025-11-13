@@ -1,0 +1,14 @@
+{
+  "local_configuration_check_instructions": {
+    "date": "2025-11-13",
+    "important_note": "以下指令应在本地Windows环境执行，而非服务器端",
+    "local_check_commands": {
+      "check_user_settings": "type \"C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json\"",
+      "check_project_settings": "type \"C:\\Users\\华为\\FORTUNE网站升级\\.vscode\\settings.json\"",
+      "check_workspace_file": "type \"C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace\"",
+      "check_config_directory": "dir \"C:\\Users\\华为\\FORTUNE网站升级\\配置文档\""
+    },
+    "server_side_note": "服务器端不应存在以上配置文件，仅保留项目文档和脚本",
+    "synchronization_method": "通过Git同步代码和文档，配置文件保留在各自环境中"
+  }
+}
