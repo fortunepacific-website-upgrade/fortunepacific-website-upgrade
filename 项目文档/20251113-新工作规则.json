@@ -1,0 +1,25 @@
+{
+  "new_working_principles": {
+    "date": "2025-11-13",
+    "core_principles": {
+      "no_more_cut_and_paste": "避免一刀切的做法",
+      "thorough_investigation_first": "彻底调查原始架构和文件结构",
+      "version_control_everything": "所有修改必须通过Git版本控制",
+      "backup_before_change": "任何修改前必须创建快照",
+      "understand_before_upgrade": "完全理解原始逻辑后再升级"
+    },
+    "investigation_process": {
+      "step_1": "彻底检查文件路径结构",
+      "step_2": "分析每个文件的真实作用和调用规则",
+      "step_3": "理解原始开发者的架构思路",
+      "step_4": "记录原始版本内容和数据结构",
+      "step_5": "制定渐进式升级方案"
+    },
+    "required_information_collection": {
+      "file_structure_analysis": "详细记录所有文件路径和用途",
+      "dependency_mapping": "分析文件间的调用关系",
+      "version_tracking": "记录不同版本的变更历史",
+      "security_assessment": "检查新增文件的安全性"
+    }
+  }
+}
