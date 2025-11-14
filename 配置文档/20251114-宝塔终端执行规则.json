@@ -1,6 +1,7 @@
 {
   "baota_terminal_execution_rules": {
     "date": "2025-11-14",
+    "version": "1.2",
     "command_format_requirements": {
       "strict_format": "每次只提供可一键复制执行的bash指令集合",
       "numbering": "每条指令都有编号，例如 # Bash指令1. 指令描述",
@@ -42,13 +43,108 @@
         "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace"
       ]
     },
+    "breakpoint_management_enhanced_rules": {
+      "snapshot_management": "关键操作前告知操作者快照名称，操作者将手动创建ECS快照",
+      "cleanup_principles": "保留有用备份，及时删除无用垃圾"
+    },
+    "environment_isolation_rules": {
+      "file_storage": "所有文件信息保存在/home/FORTUNE网站升级/，禁止使用其他文件夹",
+      "content_includes": [
+        "当前阶段时间",
+        "当前目录",
+        "项目信息",
+        "当前断点的精准描述和备份，Json和MD文档",
+        "待执行指令队列"
+      ]
+    },
+    "snapshot_and_backup_management_rules": {
+      "retention_policy": "保留有用的备份和日志，及时删除确认无用的备份和垃圾",
+      "test_site_storage": "测试站点相应的信息和备份必须条理化的全部保存在本地[/home/FORTUNE网站升级]文件夹内"
+    },
+    "breakpoint_recovery_mechanism": {
+      "requirements": [
+        "记录完整状态",
+        "创建系统备份",
+        "生成断点标记文件，包含：当前阶段目标、已完成任务清单、待执行指令队列、已验证配置信息",
+        "确保断电断网后能无缝恢复"
+      ]
+    },
+    "data_management_specifications": {
+      "content_cleanup_standards": [
+        "每日或每工作3小时及时清理各种影响VS CODE+灵码运行速度的各种垃圾，日志等，在保证项目安全运行的前提下，最大化地消除所有影响VS CODE+灵码运行质量和速度的因素",
+        "经严格验证后，确认需要清理的无有效调用的，过时的，多余的废弃图片、文档、媒体文件，软件，插件，废弃数据库表/字段"
+      ]
+    },
+    "real_time_update_authorization": {
+      "authorized_content": [
+        "根据项目实际进展更新执行规则",
+        "根据运行站点升级需要及时更新ESA配置",
+        "根据运行站点升级需要及时更新ESA规则和边缘函数配置，并及时告诉操作者手动更新到阿里云和cloudfare里",
+        "断点记录文件 - 根据执行进度更新状态",
+        "工作区配置 - 优化开发环境设置",
+        "必须保持SSL/TLS配置一致性",
+        "缓存规则必须严格执行"
+      ],
+      "priority_rules": [
+        "保护数据安全 - 绝不删除保护清单中的任何内容",
+        "断点可恢复 - 确保任何时刻都能从断点恢复",
+        "性能优化 - 在保证数据安全的前提下优化性能",
+        "实时更新 - 根据实际进展更新规则和配置"
+      ],
+      "effective_time": "立即生效",
+      "update_permissions": "灵码可根据实际需要实时更新授权内容"
+    },
+    "standard_workflows": {
+      "daily_start": {
+        "description": "每日开始新工作时自动执行",
+        "commands": [
+          "cd /home/FORTUNE网站升级",
+          "git status",
+          "git log --oneline -3"
+        ]
+      },
+      "work_process": {
+        "description": "工作过程中，每3小时自动执行",
+        "commands": [
+          "# 执行日常网站维护任务",
+          "# 定期保存进度：git add . && git commit -m \"工作说明
+        ]
+      },
+      "daily_end": {
+        "description": "每日结束工作，关闭VS CODE+灵码前自动执行",
+        "commands": [
+          "cd /home/FORTUNE网站升级",
+          "git add .",
+          "git commit -m \"$(date +%Y-%m-%d) 日常工作更新\"",
+          "git push origin master"
+        ]
+      },
+      "periodic_maintenance": {
+        "description": "每3小时自动执行定期维护",
+        "commands": [
+          "/home/FORTUNE网站升级/system_health_check.sh",
+          "/home/FORTUNE网站升级/jquery_version_monitor.sh",
+          "/home/FORTUNE网
+        ]
+      }
+    },
+    "important_reminders": [
+      "环境分离：本地配置文件绝不上传到服务器",
+      "自动化运行：系统已建立自动检查和清理机制",
+      "版本控制：所有项目文件通过Git管理",
+      "安全操作：遵循既定工作流程，避免一刀切操作"
+    ],
+    "operation_principles": {
+      "most_important_granularity": "提供宝塔面板点击步骤级别指导，或直接提供宝塔终端 bash 指令的集合",
+      "special_emphasis": "只有操作者黏贴回来执行信息的才能证明操作者已经执行过这些指令，否则就是操作者还没有执行这些执令！"
+    },
     "implementation_confirmation": {
       "previous_execution_result": {
         "environment_separation_file": "已创建并提交",
         "performance_optimization": "已完成灵码性能优化",
         "system_status": "系统运行正常"
       },
-      "current_commit": "250e603 2025-11-14 更新环境分离确认文件，明确访问权限"
+      "current_commit": "329d94a 2025-11-14 创建宝塔终端执行规则文件，明确指令格式和安全要求"
     }
   }
 }
