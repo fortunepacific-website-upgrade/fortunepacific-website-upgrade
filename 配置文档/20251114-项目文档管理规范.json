@@ -1,0 +1,48 @@
+{
+  "project_document_management_policy": {
+    "date": "2025-11-14",
+    "policy_objective": "规范项目文档管理，确保重要信息得到妥善保存和版本控制",
+    "document_categories": {
+      "core_principles": {
+        "file": "/home/FORTUNE网站升级/配置文档/system-management-core-principles.md",
+        "description": "系统管理核心铁律",
+        "update_frequency": "根据需要更新"
+      },
+      "project_status": {
+        "file": "/home/FORTUNE网站升级/配置文档/fortunepacific-website-upgrade-status.md",
+        "description": "网站升级项目现状完整信息",
+        "update_frequency": "定期更新，重大变更时立即更新"
+      },
+      "esa_configurations": {
+        "files": [
+          "/home/FORTUNE网站升级/配置文档/20251114-ESA边缘函数配置.json",
+          "/home/FORTUNE网站升级/配置文档/20251114-ESA完整配置.json"
+        ],
+        "description": "ESA边缘函数和完整配置",
+        "update_frequency": "根据站点升级需要更新"
+      },
+      "execution_rules": {
+        "file": "/home/FORTUNE网站升级/配置文档/20251114-宝塔终端执行规则.json",
+        "description": "宝塔终端执行规则",
+        "update_frequency": "根据实际进展更新"
+      }
+    },
+    "storage_principles": {
+      "location": "/home/FORTUNE网站升级/配置文档/",
+      "version_control": "所有文档都应提交到Git进行版本控制",
+      "access_control": "灵码可直接读取，操作者可查看和验证",
+      "backup_policy": "定期备份重要文档"
+    },
+    "update_authorization": {
+      "core_principles": "灵码可根据实际需要实时更新",
+      "project_status": "根据项目进展定期更新",
+      "esa_configurations": "根据站点升级需要更新",
+      "execution_rules": "根据实际执行情况更新"
+    },
+    "implementation_confirmation": {
+      "project_status_created": "/home/FORTUNE网站升级/配置文档/fortunepacific-website-upgrade-status.md",
+      "git_integration": "已提交到Git版本控制",
+      "accessibility": "灵码和操作者均可访问"
+    }
+  }
+}
