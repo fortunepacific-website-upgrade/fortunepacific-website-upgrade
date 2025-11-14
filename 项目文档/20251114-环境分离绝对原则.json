@@ -1,0 +1,28 @@
+{
+  "absolute_environment_separation_principle": {
+    "date": "2025-11-14",
+    "critical_understanding": "必须绝对区分服务器环境和本地环境",
+    "server_side_environment": {
+      "working_directory": "/home/FORTUNE网站升级",
+      "git_repository": "/home/FORTUNE网站升级/.git",
+      "execution_environment": "Linux服务器宝塔终端",
+      "purpose": "网站运行、维护、部署"
+    },
+    "local_side_environment": {
+      "working_directory": "C:\\Users\\华为\\FORTUNE网站升级",
+      "git_repository": "C:\\Users\\华为\\FORTUNE网站升级\\.git",
+      "execution_environment": "Windows本地VS Code",
+      "purpose": "代码编辑、分析、本地测试"
+    },
+    "absolute_rules": {
+      "never_confuse_paths": "绝不混淆两个路径",
+      "server_only_terminal": "服务器端只使用宝塔终端",
+      "local_only_vscode": "本地只使用VS Code",
+      "synchronization_via_git": "通过Git进行代码同步"
+    },
+    "current_location_check": {
+      "correct_server_path": "/home/FORTUNE网站升级",
+      "incorrect_local_path": "C:\\Users\\华为\\FORTUNE网站升级 (本地环境，不在服务器上)"
+    }
+  }
+}
