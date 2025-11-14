@@ -1,0 +1,54 @@
+{
+  "vscode_user_settings_reference": {
+    "date": "2025-11-14",
+    "important_note": "此文件仅为参考，不能直接修改本地VS Code配置",
+    "correct_user_settings_location": "C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json",
+    "issue_identified": "Preferences: Open Settings (JSON) 显示了工作区文件内容而非用户设置文件内容",
+    "correct_user_settings_content": {
+      "update.mode": "none",
+      "extensions.autoUpdate": false,
+      "extensions.autoCheckUpdates": false,
+      "tongyi-lingma.autoTrigger": false,
+      "tongyi-lingma.enableInlineCompletion": false,
+      "tongyi-lingma.enableAutoCompletion": false,
+      "tongyi-lingma.maxTokens": 1024,
+      "tongyi-lingma.timeout": 9000,
+      "tongyi-lingma.enableCodeReview": false,
+      "tongyi-lingma.retryAttempts": 2,
+      "tongyi-lingma.enableRegularResponse": true,
+      "tongyi-lingma.modelProvider": "local",
+      "tongyi-lingma.enableLocalModel": true,
+      "tongyi-lingma.localModelMaxTokens": 1024,
+      "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+      },
+      "editor.suggestOnTriggerCharacters": false,
+      "editor.quickSuggestionsDelay": 1000,
+      "editor.wordBasedSuggestions": "off",
+      "editor.largeFileOptimizations": false,
+      "editor.inlineSuggest.enabled": false,
+      "git.enableSmartCommit": false,
+      "git.autoRepositoryDetection": false,
+      "files.autoSave": "afterDelay",
+      "files.autoSaveDelay": 15000,
+      "telemetry.enableTelemetry": false,
+      "workbench.startupEditor": "none",
+      "workbench.colorTheme": "Default Dark+",
+      "window.titleBarStyle": "custom"
+    },
+    "troubleshooting_steps": [
+      "在VS Code中使用 Ctrl+Shift+P 打开命令面板",
+      "输入并选择 'Preferences: Open Settings (JSON)'",
+      "确保打开的是用户设置文件而非工作区文件",
+      "用户设置文件路径应为: C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json",
+      "如果显示错误内容，请手动更正为上述配置"
+    ],
+    "implementation_confirmation": {
+      "reference_file_created": "/home/FORTUNE网站升级/配置文档/20251114-VSCode用户设置参考.json",
+      "purpose": "为操作者提供正确的用户设置配置参考",
+      "limitation": "服务器端无法直接修改本地VS Code配置"
+    }
+  }
+}
