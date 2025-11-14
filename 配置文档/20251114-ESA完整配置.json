@@ -1,0 +1,129 @@
+{
+  "version": "2025-10-15",
+  "site_management": {
+    "frontend_url": "https://www.fortunepacific.net/",
+    "backend_url": "https://www.fortunepacific.net/manage/",
+    "access_method": "CNAME",
+    "region": "全球（不包含中国内地）",
+    "esa_access_mode": "CNAME接入"
+  },
+  "ssl_tls": {
+    "status": "开启",
+    "certificate": {
+      "name": "cert-14598554",
+      "force_https": "关闭"
+    },
+    "tls_protocols": ["TLSv1.2", "TLSv1.3"],
+    "ocsp_stapling": "开启",
+    "random_encryption": "关闭"
+  },
+  "hsts": {
+    "status": "开启",
+    "expiration_time": "6个月",
+    "subdomain_inheritance": "开启",
+    "preload": "开启"
+  },
+  "security": {
+    "rate_limiting": {
+      "status": "开启",
+      "protection_level": "宽松",
+      "action": "观察"
+    },
+    "anti_scraping": {
+      "status": "开启",
+      "action": "观察"
+    }
+  },
+  "origin_server": {
+    "protocol": "跟随客户端协议",
+    "ports": {
+      "http": 80,
+      "https": 443
+    },
+    "certificate_validation": "关闭",
+    "mutual_authentication": "关闭"
+  },
+  "waf": {
+    "managed_rules": {
+      "content": "所有传入请求",
+      "protection_level": "中等",
+      "action": "观察"
+    }
+  },
+  "bots": {
+    "definitely_bot": "观察",
+    "probably_bot": "观察"
+  },
+  "cache": {
+    "query_string": "全部忽略",
+    "browser_cache_expiration": "4个月",
+    "edge_cache_expiration": "1年",
+    "development_mode": "开启",
+    "query_string_sorting": "开启",
+    "multi_level_cache": "边缘缓存层 + 智能缓存层"
+  },
+  "cache_rules": [
+    {
+      "name": "Exclude_BT_Panel",
+      "condition": "(http.host eq \"bt.fortunepacific.net\")",
+      "action": "不缓存"
+    },
+    {
+      "name": "Exclude_Admin_Paths",
+      "condition": "(lower(http.request.uri.path) in {\"/admin\" \"/manage\"} and http.host in {\"www.fortunepacific.net\" \"fortunepacific.net\"})",
+      "action": "不缓存"
+    },
+    {
+      "name": "Dynamic_Paths_No_Cache",
+      "condition": "(lower(http.request.uri.path) in {\"/wp-json\" \"/api\"} and http.host in {\"www.fortunepacific.net\" \"fortunepacific.net\"})",
+      "action": "不缓存"
+    },
+    {
+      "name": "Dynamic_Extensions_No_Cache",
+      "condition": "(lower(http.request.uri.path.extension) in {\"php\" \"asp\" \"aspx\"} and http.host in {\"fortunepacific.net\" \"fortunepacific.net\"})",
+      "action": "不缓存"
+    },
+    {
+      "name": "HTML_Cache_1H",
+      "condition": "(lower(http.request.uri.path.extension) in {\"html\" \"htm\"} and http.host in {\"fortunepacific.net\" \"www.fortunepacific.net\"})",
+      "browser_cache_expiration": "1小时",
+      "edge_cache_expiration": "1天"
+    },
+    {
+      "name": "Static_Resources_Cache",
+      "condition": "(lower(http.request.uri.path.extension) in {\"css\" \"js\" \"jpg\" \"jpeg\" \"png\" \"gif\" \"svg\" \"ico\" \"webp\" \"woff\" \"woff2\" \"ttf\" \"eot\"} and http.host in {\"fortunepacific.net\" \"www.fortunepacific.net\"})",
+      "browser_cache_expiration": "1年",
+      "edge_cache_expiration": "1年"
+    }
+  ],
+  "network_optimization": {
+    "file_compression": {
+      "name": "Gzip优化",
+      "condition": "(http.host in {\"fortunepacific.net\" \"www.fortunepacific.net\"})",
+      "gzip": "开启",
+      "brotli": "开启",
+      "zstd": "开启"
+    }
+  },
+  "origin_rules": {
+    "condition": "(http.host in {\"fortunepacific.net\" \"www.fortunepacific.net\"})",
+    "origin_host": "www.fortunepacific.net",
+    "origin_protocol": "跟随客户端",
+    "ports": {
+      "http": 80,
+      "https": 443
+    },
+    "origin_sni": "www.fortunepacific.net",
+    "dns_record": "A/AAAA|www.fortunepacific.net|代理加速:47.254.173.39"
+  },
+  "speed_network": {
+    "image_conversion": "关闭",
+    "gzip": "打开",
+    "brotli": "打开",
+    "zstd": "打开",
+    "http2": "关闭",
+    "http2_origin": "关闭",
+    "http3_quic": "打开",
+    "smart_routing": "关闭"
+  }
+}
