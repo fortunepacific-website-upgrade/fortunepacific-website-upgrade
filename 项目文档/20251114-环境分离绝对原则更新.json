@@ -1,0 +1,18 @@
+{
+  "absolute_environment_separation_principle_update": {
+    "date": "2025-11-14",
+    "server_side_files_i_can_access": [
+      "/home/FORTUNE网站升级/*.sh",
+      "/home/FORTUNE网站升级/配置文档/*.json",
+      "/home/FORTUNE网站升级/项目文档/*.json",
+      "/home/FORTUNE网站升级/.git/*"
+    ],
+    "local_side_files_i_cannot_access": [
+      "C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json",
+      "C:\\Users\\华为\\FORTUNE网站升级\\.vscode\\settings.json",
+      "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace"
+    ],
+    "working_principle": "我只能在服务器端执行操作，通过Git与本地环境同步代码",
+    "command_format_requirement": "严格按照宝塔终端指令格式提供可一键复制执行的bash指令集合"
+  }
+}
