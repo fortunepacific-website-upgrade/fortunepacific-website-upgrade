@@ -1,7 +1,8 @@
 {
   "baota_terminal_execution_rules": {
     "date": "2025-11-14",
-    "version": "1.2",
+    "version": "1.4",
+    "critical_execution_principle": "特别强调：只有操作者黏贴回来执行信息的才能证明操作者已经执行过这些指令，否则就是操作者还没有执行这些执令！",
     "command_format_requirements": {
       "strict_format": "每次只提供可一键复制执行的bash指令集合",
       "numbering": "每条指令都有编号，例如 # Bash指令1. 指令描述",
@@ -34,6 +35,7 @@
       "accessible_files": [
         "/home/FORTUNE网站升级/*.sh",
         "/home/FORTUNE网站升级/配置文档/*.json",
+        "/home/FORTUNE网站升级/配置文档/*.md",
         "/home/FORTUNE网站升级/项目文档/*.json",
         "/home/FORTUNE网站升级/.git/*"
       ],
@@ -42,6 +44,17 @@
         "C:\\Users\\华为\\FORTUNE网站升级\\.vscode\\settings.json",
         "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace"
       ]
+    },
+    "document_management": {
+      "storage_location": "/home/FORTUNE网站升级/配置文档/",
+      "file_types": [
+        "JSON配置文件",
+        "Markdown文档",
+        "Shell脚本"
+      ],
+      "update_authorization": "灵码可根据项目需要实时更新文档",
+      "git_integration": "所有文档都应提交到Git进行版本控制",
+      "core_principles_document": "/home/FORTUNE网站升级/配置文档/system-management-core-principles.md"
     },
     "breakpoint_management_enhanced_rules": {
       "snapshot_management": "关键操作前告知操作者快照名称，操作者将手动创建ECS快照",
@@ -104,10 +117,10 @@
         ]
       },
       "work_process": {
-        "description": "工作过程中，每3小时自动执行",
-        "commands": [
+        "description": "工作过程中
+�        "commands": [
           "# 执行日常网站维护任务",
-          "# 定期保存进度：git add . && git commit -m \"工作说明
+          "# 定期保存进度：git add . && git commit -m \"工作说明\""
         ]
       },
       "daily_end": {
@@ -124,7 +137,7 @@
         "commands": [
           "/home/FORTUNE网站升级/system_health_check.sh",
           "/home/FORTUNE网站升级/jquery_version_monitor.sh",
-          "/home/FORTUNE网
+          "/home/FORTUNE网站升级/auto-push.sh"
         ]
       }
     },
@@ -140,11 +153,11 @@
     },
     "implementation_confirmation": {
       "previous_execution_result": {
-        "environment_separation_file": "已创建并提交",
+        "environment_se
         "performance_optimization": "已完成灵码性能优化",
-        "system_status": "系统运行正常"
-      },
-      "current_commit": "329d94a 2025-11-14 创建宝塔终端执行规则文件，明确指令格式和安全要求"
+        "system_status": "系
+�      },
+      "current_commit": "4b27f5f 2025-11-14 创建ESA边缘函数和完整配置文件，可用于站点升级需要时更新"
     }
   }
 }
