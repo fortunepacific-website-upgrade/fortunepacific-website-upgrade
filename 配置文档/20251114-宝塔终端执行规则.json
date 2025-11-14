@@ -1,0 +1,54 @@
+{
+  "baota_terminal_execution_rules": {
+    "date": "2025-11-14",
+    "command_format_requirements": {
+      "strict_format": "每次只提供可一键复制执行的bash指令集合",
+      "numbering": "每条指令都有编号，例如 # Bash指令1. 指令描述",
+      "sequential_execution": "等待前面指令反馈结果后再提供后续指令",
+      "baota_compatible_format": "严格按照宝塔终端格式提供指令"
+    },
+    "forbidden_commands": {
+      "dangerous_commands": [
+        "rm -rf /",
+        "find / -delete",
+        "dd if=/dev/zero of=/dev/sda",
+        "bt 1",
+        "bt 2"
+      ],
+      "reason": "这些命令可能导致系统损坏或数据丢失"
+    },
+    "safe_commands": {
+      "approved_commands": [
+        "nginx -t",
+        "/www/server/nginx/sbin/nginx -s reload",
+        "ps aux | grep nginx",
+        "tar -czf backup_$(date +%Y%m%d).tar.gz /path/to/backup",
+        "md5sum file_name",
+        "diff dir1 dir2"
+      ],
+      "usage": "这些命令是安全的，可以正常使用"
+    },
+    "execution_environment": {
+      "working_directory": "/home/FORTUNE网站升级",
+      "accessible_files": [
+        "/home/FORTUNE网站升级/*.sh",
+        "/home/FORTUNE网站升级/配置文档/*.json",
+        "/home/FORTUNE网站升级/项目文档/*.json",
+        "/home/FORTUNE网站升级/.git/*"
+      ],
+      "inaccessible_files": [
+        "C:\\Users\\华为\\AppData\\Roaming\\Code\\User\\settings.json",
+        "C:\\Users\\华为\\FORTUNE网站升级\\.vscode\\settings.json",
+        "C:\\Users\\华为\\FORTUNE网站升级\\Fortune网站升级.code-workspace"
+      ]
+    },
+    "implementation_confirmation": {
+      "previous_execution_result": {
+        "environment_separation_file": "已创建并提交",
+        "performance_optimization": "已完成灵码性能优化",
+        "system_status": "系统运行正常"
+      },
+      "current_commit": "250e603 2025-11-14 更新环境分离确认文件，明确访问权限"
+    }
+  }
+}
