@@ -1,5 +1,5 @@
 === Fortunepacific 系统健康检查 ===
-检查时间: Sat Nov 15 02:00:01 CST 2025
+检查时间: Sat Nov 15 17:27:42 CST 2025
 ================================
 
 1. 服务状态检查:
@@ -18,8 +18,8 @@ tmpfs           1.9G   16K  1.9G   1% /dev/shm
 
 4. 内存使用情况:
              total       used       free     shared    buffers     cached
-Mem:          3.9G       1.2G       2.6G       9.9M        26M       180M
--/+ buffers/cache:       1.0G       2.8G
+Mem:          3.9G       2.0G       1.9G        10M       266M       502M
+-/+ buffers/cache:       1.2G       2.6G
 Swap:         1.0G         0B       1.0G
 
 5. 网站可访问性检查:
