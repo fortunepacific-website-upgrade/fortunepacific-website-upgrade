@@ -1,5 +1,5 @@
 === jQuery版本监控报告 ===
-生成时间: Sat Nov 15 17:27:43 CST 2025
+生成时间: Sat Nov 15 17:29:54 CST 2025
 ========================
 1. 系统中存在的jQuery版本:
 文件: /www/wwwroot/fortunepacific.net/js/jquery-1.7.2.min.js
