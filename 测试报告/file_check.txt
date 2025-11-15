@@ -1,0 +1,9 @@
+关键jQuery文件检查:
+lrwxrwxrwx 1 root root 32 Oct  7 16:49 /www/wwwroot/fortunepacific.net/js/jquery-1.7.2.min.js -> ../static/js/jquery-3.7.1.min.js
+-rw-r--r-- 1 root root 87533 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/jquery-latest.min.js
+-rw-r--r-- 1 root root 24252 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/jquery.bxslider.min.js
+-rw-r--r-- 1 root root 13577 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/jquery-migrate-3.4.1.min.js
+-rw-r--r-- 1 root root 87533 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/jquery-1.7.2.min.js
+-rw-r--r-- 1 root root 87533 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/jquery-3.7.1.min.js
+-rw-r--r-- 1 www www 93107 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/third-party/jquery-1.10.2.min.js
+-rw-r--r-- 1 www www 238314 Nov 11 20:31 /www/wwwroot/fortunepacific.net/static/js/plugin/jquery-ui/jquery-ui.min.js

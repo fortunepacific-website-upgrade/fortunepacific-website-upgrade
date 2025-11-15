@@ -1,0 +1,6 @@
+<script type='text/javascript' src='/static/js/jquery-3.7.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-migrate-3.4.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/plugin/jscrollpane/jquery.mousewheel.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/plugin/jscrollpane/jquery.jscrollpane.js?v=14.00297' ></script>
+<link href='/static/js/plugin/jscrollpane/jquery.jscrollpane.css?v=14.00297' rel='stylesheet' type='text/css'  />

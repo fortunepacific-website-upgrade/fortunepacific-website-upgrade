@@ -1,0 +1,25 @@
+{
+  "jquery_ui_upgrade": {
+    "status": "download_completed",
+    "timestamp": "2025-11-15 21:55:00",
+    "phase": "文件下载完成阶段",
+    "next_phase": "文件替换准备阶段",
+    "current_file": "/home/FORTUNE网站升级/jquery-ui升级工作区/jquery-ui.min.js",
+    "target_file": "/www/wwwroot/fortunepacific.net/static/js/plugin/jquery-ui/jquery-ui.min.js",
+    "backup_file": "/home/FORTUNE网站升级/插件升级备份/jquery-ui.min.js.bak_20251115_211400",
+    "snapshot_name": "jQuery_plugin_upgrade_20251115_2130",
+    "file_verification": {
+      "download_status": "completed",
+      "file_size": "checked",
+      "md5_checksum": "recorded",
+      "content_preview": "checked"
+    },
+    "pending_actions": [
+      "创建额外备份",
+      "执行文件替换",
+      "重启Web服务",
+      "功能测试验证",
+      "记录升级结果"
+    ]
+  }
+}

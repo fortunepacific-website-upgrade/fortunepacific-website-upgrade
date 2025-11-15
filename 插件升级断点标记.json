@@ -1,0 +1,38 @@
+{
+  "breakpoint_info": {
+    "current_phase": "插件文件升级准备阶段",
+    "phase_time": "2025-11-15 21:30:00",
+    "current_directory": "/home/FORTUNE网站升级",
+    "project_info": "Fortunepacific网站jQuery插件升级项目",
+    "breakpoint_description": "已完成插件升级环境准备，准备开始jquery-ui插件升级",
+    "backup_info": {
+      "jquery_ui_backup": "/home/FORTUNE网站升级/插件升级备份/jquery-ui.min.js.bak_20251115_211400",
+      "snapshot_name": "jQuery_plugin_upgrade_20251115_2130"
+    },
+    "pending_commands": [
+      "创建ECS快照",
+      "下载最新jquery-ui版本",
+      "验证文件兼容性",
+      "执行文件替换",
+      "功能测试验证"
+    ],
+    "completed_tasks": [
+      "创建插件升级工作环境",
+      "分析插件依赖关系",
+      "创建安全检查清单",
+      "备份jquery-ui文件",
+      "制定升级计划"
+    ],
+    "verified_configurations": {
+      "working_directory": "/home/FORTUNE网站升级",
+      "backup_directory": "/home/FORTUNE网站升级/插件升级备份",
+      "log_directory": "/home/FORTUNE网站升级/插件升级日志"
+    }
+  },
+  "execution_rules_compliance": {
+    "snapshot_required": true,
+    "backup_before_operation": true,
+    "sequential_execution": true,
+    "manual_confirmation": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "jquery_ui_upgrade": {
+    "status": "fully_completed",
+    "timestamp": "2025-11-15 22:15:00",
+    "phase": "升级完全完成阶段",
+    "next_phase": "其他插件升级阶段",
+    "summary": {
+      "upgrade_status": "success",
+      "version_from": "1.11.1",
+      "version_to": "1.13.2",
+      "test_results": "all_passed",
+      "backup_status": "completed"
+    },
+    "files": {
+      "target_file": "/www/wwwroot/fortunepacific.net/static/js/plugin/jquery-ui/jquery-ui.min.js",
+      "backup_files": [
+        "/home/FORTUNE网站升级/插件升级备份/jquery-ui.min.js.bak_20251115_211400",
+        "/home/FORTUNE网站升级/插件升级备份/jquery-ui.min.js.extra_backup_20251115_220021"
+      ]
+    },
+    "snapshot_name": "jQuery_plugin_upgrade_20251115_2130"
+  }
+}

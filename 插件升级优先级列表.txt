@@ -1,0 +1,22 @@
+# 插件升级优先级列表
+
+## 第一级别（高优先级 - 核心UI组件）
+1. jquery-ui/jquery-ui.min.js - UI框架核心
+2. bxslider/jquery.bxslider.js - 首页轮播图
+3. jscrollpane/jquery.jscrollpane.js - 滚动条组件
+
+## 第二级别（中优先级 - 功能组件）
+4. file_upload/js/vendor/jquery.ui.widget.js - 文件上传基础
+5. file_upload/js/jquery.fileupload.js - 文件上传核心
+6. lightbox/jquery.lightbox.js - 图片灯箱效果
+
+## 第三级别（低优先级 - 辅助组件）
+7. ueditor/third-party/jquery-1.10.2.min.js - 编辑器组件
+8. ckeditor/adapters/jquery.js - 编辑器适配器
+9. 其他效果插件
+
+## 升级原则
+1. 每次只升级一个插件
+2. 升级前必须备份
+3. 升级后必须测试
+4. 发现问题立即回滚

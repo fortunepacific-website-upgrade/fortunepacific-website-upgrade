@@ -1,0 +1,16 @@
+首页jQuery引用:
+<script type='text/javascript' src='/static/js/jquery-3.7.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-migrate-3.4.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery.bxslider.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+        <div id="banner" class="fr"><div class='bxSlide-outter' style='overflow:hidden;margin-left:auto;margin-right:auto; width:883px; max-width:100%; max-height:406px'><script type='text/javascript' src='/static/js/plugin/bxslider/jquery.bxslider.js?v=14.00297' ></script>
+<link href='/static/js/plugin/bxslider/jquery.bxslider.css?v=14.00297' rel='stylesheet' type='text/css'  />
+
+管理后台jQuery引用:
+<script type='text/javascript' src='/static/js/jquery-3.7.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-migrate-3.4.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/plugin/jscrollpane/jquery.mousewheel.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/plugin/jscrollpane/jquery.jscrollpane.js?v=14.00297' ></script>
+<link href='/static/js/plugin/jscrollpane/jquery.jscrollpane.css?v=14.00297' rel='stylesheet' type='text/css'  />

@@ -1,0 +1,63 @@
+=== jQuery兼容性详细检查 ===
+检查时间: Sat Nov 15 18:02:49 CST 2025
+==========================
+1. 检查首页jQuery加载:
+<script type='text/javascript' src='/static/js/jquery-3.7.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-migrate-3.4.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery.bxslider.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+        <div id="banner" class="fr"><div class='bxSlide-outter' style='overflow:hidden;margin-left:auto;margin-right:auto; width:883px; max-width:100%; max-height:406px'><script type='text/javascript' src='/static/js/plugin/bxslider/jquery.bxslider.js?v=14.00297' ></script>
+<link href='/static/js/plugin/bxslider/jquery.bxslider.css?v=14.00297' rel='stylesheet' type='text/css'  />
+
+2. 检查管理后台jQuery加载:
+<script type='text/javascript' src='/static/js/jquery-3.7.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-migrate-3.4.1.min.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/jquery-compatibility-fix.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/plugin/jscrollpane/jquery.mousewheel.js?v=14.00297' ></script>
+<script type='text/javascript' src='/static/js/plugin/jscrollpane/jquery.jscrollpane.js?v=14.00297' ></script>
+<link href='/static/js/plugin/jscrollpane/jquery.jscrollpane.css?v=14.00297' rel='stylesheet' type='text/css'  />
+
+3. 检查.size()方法使用情况:
+/www/wwwroot/fortunepacific.net/static/js/jquery-compatibility-fix.js
+
+4. 检查.bind()方法使用情况:
+/www/wwwroot/fortunepacific.net/js/jquery-1.7.2.min.js
+/www/wwwroot/fortunepacific.net/static/js/jquery-latest.min.js
+/www/wwwroot/fortunepacific.net/static/js/jquery-migrate-3.4.1.min.js
+/www/wwwroot/fortunepacific.net/static/js/jquery-1.8.3.js
+/www/wwwroot/fortunepacific.net/static/js/jquery-1.7.2.min.js
+/www/wwwroot/fortunepacific.net/static/js/jquery-3.7.1.min.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/effect/magiczoom.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/third-party/webuploader/webuploader.html5only.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/third-party/webuploader/webuploader.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/third-party/webuploader/webuploader.flashonly.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/third-party/webuploader/webuploader.withoutimage.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ueditor/ueditor.all.min.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ckeditor/ckeditor.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ckeditor/plugins/pastefromword/filter/default.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ckeditor/adapters/jquery.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/tool_tips/tool_tips.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/operamasks/operamasks-ui.min.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/jscolor/jscolor.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/jquery-ui/jquery-ui.min.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/bxslider/jquery.bxslider.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/dragsort/dragsort-0.5.1.min.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/jscrollpane/jquery.jscrollpane.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/jscrollpane/jquery.mousewheel.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/vendor/jquery.ui.widget.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/cors/jquery.postmessage-transport.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/jquery.fileupload-ui.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/jquery.iframe-transport.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/jquery.fileupload.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/ad/jQuery.blockUI.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/farbtastic/farbtastic.js
+/www/wwwroot/fortunepacific.net/static/js/plugin/farbtastic/__farbtastic.js
+/www/wwwroot/fortunepacific.net/static/js/jquery-min.js
+/www/wwwroot/fortunepacific.net/static/mobile/js/rye-touch.js
+/www/wwwroot/fortunepacific.net/static/mobile/js/jquery-min.js
+
+5. 检查.live()方法使用情况:
+/www/wwwroot/fortunepacific.net/static/manage/js/extend.js
+
+=== 兼容性检查完成 ===
