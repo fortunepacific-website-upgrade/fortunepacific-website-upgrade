@@ -19,25 +19,28 @@
 - 状态: 升级完成 ✓
 - 测试: 通过 ✓
 
+### ✅ File Upload (2025-11-29)
+- 原版本: 待确认
+- 新版本: 10.32.0
+- 状态: 升级完成 ✓
+- 测试: 通过 ✓
+
 ## 准备升级
-### 🔄 File Upload (准备中)
-- 状态: 升级准备完成 ✓
-- 备份: 已完成 ✓
-- 计划: 已制定 ✓
+### 🔄 Lightbox (准备中)
+- 状态: 待准备
 
 ## 待升级插件
 ### 高优先级
-1. Lightbox - 图片灯箱效果
-2. CKEditor jQuery Adapter - 编辑器适配器
+1. CKEditor jQuery Adapter - 编辑器适配器
 
 ### 中优先级
-3. SuperSlide - 页面特效组件
-4. 其他辅助插件
+2. SuperSlide - 页面特效组件
+3. 其他辅助插件
 
 ## 升级时间计划
 - 第一阶段 (已完成): jQuery UI, bxSlider
 - 第二阶段 (已完成): jScrollPanel
-- 第三阶段 (准备中): File Upload及相关组件
+- 第三阶段 (已完成): File Upload及相关组件
 - 第四阶段: 其他辅助组件
 
 ## 风险控制
