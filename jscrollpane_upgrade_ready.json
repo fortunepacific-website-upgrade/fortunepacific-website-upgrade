@@ -1,0 +1,22 @@
+{
+  "jscrollpane_upgrade_status": {
+    "status": "ready",
+    "timestamp": "2025-11-29 14:00:00",
+    "phase": "升级准备完成阶段",
+    "next_phase": "执行jScrollPanel文件升级",
+    "requirements": {
+      "ecs_snapshot": "20251129ueeshop修复登入",
+      "file_backup": "已完成",
+      "environment_check": "已完成",
+      "upgrade_plan": "已准备"
+    },
+    "files": {
+      "upgrade_plan": "/home/FORTUNE网站升级/jscrollpane_upgrade_plan.md",
+      "backup_location": "/home/FORTUNE网站升级/plugin_backups/jscrollpane/",
+      "target_files": [
+        "/www/wwwroot/fortunepacific.net/static/js/plugin/jscrollpane/jquery.jscrollpane.js",
+        "/www/wwwroot/fortunepacific.net/static/js/plugin/jscrollpane/jquery.mousewheel.js"
+      ]
+    }
+  }
+}

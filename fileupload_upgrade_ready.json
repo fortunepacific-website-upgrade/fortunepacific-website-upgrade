@@ -1,0 +1,23 @@
+{
+  "fileupload_upgrade_status": {
+    "status": "ready",
+    "timestamp": "2025-11-29 22:00:00",
+    "phase": "升级准备完成阶段",
+    "next_phase": "执行File Upload文件升级",
+    "requirements": {
+      "ecs_snapshot": "20251129ueeshop修复登入",
+      "file_backup": "已完成",
+      "environment_check": "已完成",
+      "upgrade_plan": "已准备"
+    },
+    "files": {
+      "upgrade_plan": "/home/FORTUNE网站升级/fileupload_upgrade_plan.md",
+      "backup_location": "/home/FORTUNE网站升级/plugin_backups/fileupload/",
+      "target_files": [
+        "/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/jquery.fileupload.js",
+        "/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/jquery.iframe-transport.js",
+        "/www/wwwroot/fortunepacific.net/static/js/plugin/file_upload/js/vendor/jquery.ui.widget.js"
+      ]
+    }
+  }
+}
